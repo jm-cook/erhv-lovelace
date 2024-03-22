@@ -166,13 +166,13 @@ function t(t,e,s,i){var n,r=arguments.length,o=r<3?e:null===i?i=Object.getOwnPro
                     </div>
                 </div>
             </ha-card>
-        `}getAirFilterTmpl(){return this.hass&&this._config?"on"!=this.hass.states[this._config.filter_warning].state?D`
+        `}getAirFilterTmpl(){return this.hass&&this._config&&this._config.filter_warning?"on"!=this.hass.states[this._config.filter_warning].state?D`
                 <ha-icon class="inactive" icon="mdi:air-filter"></ha-icon>`:D`
-                <ha-icon class="warning" icon="mdi:air-filter"></ha-icon>`:D``}getBypassTmpl(){return this.hass&&this._config?"on"==this.hass.states[this._config.bypass_state].state?D`
+                <ha-icon class="warning" icon="mdi:air-filter"></ha-icon>`:D``}getBypassTmpl(){return this.hass&&this._config&&this._config.bypass_state?"on"==this.hass.states[this._config.bypass_state].state?D`
                 <ha-icon icon="mdi:electric-switch"></ha-icon>`:D`
-                <ha-icon class="inactive" icon="mdi:electric-switch"></ha-icon>`:D``}getPreHeatTmpl(){return this.hass&&this._config?"on"==this.hass.states[this._config.preheater_state].state?D`
+                <ha-icon class="inactive" icon="mdi:electric-switch"></ha-icon>`:D``}getPreHeatTmpl(){return this.hass&&this._config&&this._config.preheater_state?"on"==this.hass.states[this._config.preheater_state].state?D`
                 <ha-icon icon="mdi:radiator"></ha-icon>`:D`
-                <ha-icon icon="mdi:radiator-off"></ha-icon>`:D``}getSummerModeTmpl(){var t;return this.hass&&this._config?"off"==this.hass.states[null===(t=this._config)||void 0===t?void 0:t.summer_mode].state?D`
+                <ha-icon icon="mdi:radiator-off"></ha-icon>`:D``}getSummerModeTmpl(){var t;return this.hass&&this._config&&this._config.summer_mode?"off"==this.hass.states[null===(t=this._config)||void 0===t?void 0:t.summer_mode].state?D`
                 <ha-icon icon="mdi:snowflake" style="color: cyan;"></ha-icon>`:D`
                 <ha-icon class="s   ummer" icon="mdi:weather-sunny"></ha-icon>`:D``}getCardSize(){return 7}static get styles(){return o`
           text {
