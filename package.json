@@ -1,6 +1,6 @@
 {
   "name": "erhv-card",
-  "version": "1.0.9",
+  "version": "1.0.99",
   "description": "A homeassistant heat exchange card - for, for example, the ComfoAir, WHR, Swegon Casa ",
   "main": "dist/erhv-card.js",
   "source": "src/main.ts",
@@ -23,16 +23,16 @@
   "author": "Bolke de Bruin",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^26.6.3",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-terser": "^0.2.1",
-    "rollup": "^3.8.1",
-    "rollup-plugin-typescript2": "^0.34.1"
+    "jest": "^29.7.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.13.0",
+    "rollup-plugin-typescript2": "^0.36.0"
   },
   "dependencies": {
     "custom-card-helpers": "^1.9.0",
-    "home-assistant-js-websocket": "^8.0.1",
-    "lit": "^3.1.0"
+    "home-assistant-js-websocket": "^9.1.0",
+    "lit": "^3.1.2"
   }
 }
